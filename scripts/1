@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Script to add numbers"
+
+sum=0
+for i in $*
+do
+	sum`expr $sum + $i`
+done
+
+echo "Sum= $sum"
+echo "Sum of $*"
